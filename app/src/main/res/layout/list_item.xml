@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/backgroundColor"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="@dimen/cardview_default_elevation"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/item_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            tools:text="Product Name" />
+
+        <TextView
+            android:id="@+id/item_product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_product_name"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="In Stock: 888" />
+
+        <TextView
+            android:id="@+id/item_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_product_quantity"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:textAppearanceListItemSmall"
+            tools:text="$99" />
+
+        <Button
+            android:id="@+id/item_sale_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_product_price"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:text="@string/list_item_sale_button_text"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

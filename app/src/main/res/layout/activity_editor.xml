@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:text="@string/editor_category_overview"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorAccent"
+                app:fontFamily="casual" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/editor_product_name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/editor_hint_product_name"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/editor_product_price_field"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/dollar_sign"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+                <EditText
+                    android:id="@+id/editor_product_price_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editor_product_name_field"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/editor_hint_product_price"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/editor_product_quantity_field"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:text="@string/hash_sign"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+                <EditText
+                    android:id="@+id/editor_product_quantity_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editor_product_price_field"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/editor_hint_product_quantity"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="16dp"
+                android:text="@string/editor_category_supplier"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorAccent"
+                app:fontFamily="casual" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/editor_supplier_name_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/editor_hint_supplier_name"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+                <EditText
+                    android:id="@+id/editor_supplier_phone_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editor_supplier_name_field"
+                    android:hint="@string/editor_hint_supplier_phone"
+                    android:inputType="phone"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:fontFamily="casual" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editor_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_done_white" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">Inventory</string>
+    <string name="detail_activity_title">Product Details</string>
+    <string name="editor_activity_title_add_product">Add Product</string>
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+
+    <string name="detail_action_delete">Delete</string>
+    <string name="detail_delete_error_toast">Error deleting product record</string>
+    <string name="detail_delete_success_toast">Product record deleted successfully</string>
+    <string name="detail_update_error_toast">Error updating product quantity</string>
+
+    <string name="detail_delete_dialog_message">Delete product record?</string>
+    <string name="detail_delete_dialog_positive">Delete</string>
+    <string name="detail_delete_dialog_negative">Cancel</string>
+    <string name="editor_discard_dialog_message">Discard changes and quit product editing?</string>
+    <string name="editor_discard_dialog_positive">Discard</string>
+    <string name="editor_discard_dialog_negative">Cancel</string>
+
+    <string name="empty_view_title_text">No products available…</string>
+    <string name="empty_view_subtitle_text">Get started by adding a product from below</string>
+
+    <string name="list_item_sale_button_text">Sale</string>
+    <string name="main_in_stock">In stock:</string>
+    <string name="dollar_sign">$</string>
+    <string name="hash_sign">#</string>
+
+    <string name="sale_error_toast">Error in sale operation</string>
+    <string name="sale_success_toast">Product sold successfully</string>
+    <string name="detail_no_items_toast">There are no items left in stock</string>
+    <string name="detail_no_phone_num_toast">Supplier phone number not available</string>
+    <string name="editor_null_product_info_toast">Please complete the product info and try again</string>
+    <string name="editor_missing_product_info_toast">Please complete all required fields and try again</string>
+    <string name="editor_negative_price_toast">Invalid price entry, please try again</string>
+    <string name="editor_negative_quantity_toast">Invalid Quantity entry, please try again</string>
+    <string name="editor_insert_error_toast">Error with inserting product</string>
+    <string name="editor_insert_success_toast">Product added successfully</string>
+    <string name="editor_update_error_toast">Error with updating product</string>
+    <string name="editor_update_success_toast">Product updated successfully</string>
+
+    <string name="editor_category_overview">Overview</string>
+    <string name="editor_category_supplier">Supplier</string>
+    <string name="editor_hint_product_name">Product Name</string>
+    <string name="editor_hint_product_price">Price</string>
+    <string name="editor_hint_product_quantity">Quantity</string>
+    <string name="editor_hint_supplier_name">Supplier Name</string>
+    <string name="editor_hint_supplier_phone">01234567890</string>
+
+    <string name="items_in_stock">items in stock</string>
+
+
+</resources>
